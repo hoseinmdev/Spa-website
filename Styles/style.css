@@ -1,0 +1,22 @@
+@import url("../Styles/fonts.css");
+@import url("../Styles/products.css");
+@import url("../Styles/menu.css");
+@import url("../Styles/infoProduct.css");
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primaryColor);
+  border-radius: 15px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Vazir";
+}
+.container {
+  display: flex;
+}

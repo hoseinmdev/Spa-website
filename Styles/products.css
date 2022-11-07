@@ -1,0 +1,75 @@
+:root {
+  --primaryColor: #8b5cf6;
+  --secondaryColor: #f1f5f9;
+  --mainWhite: #ffffff;
+  --mainBlack: #222;
+  --mainGray: #7c7c7c;
+  --mainRed: #db2777;
+  --navyColor: #0f172a;
+}
+
+.backdrop{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--mainBlack);
+  display: none;
+  z-index:4;
+  transition: 0.2s;
+}
+.showBackdrop{
+  display: block;
+  opacity: 0.7;
+}
+
+
+.products-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 4rem;
+}
+.product-block {
+  width: 12rem;
+  height: 14.5rem;
+  border-radius: 8px;
+  background-color: var(--mainWhite);
+  transition: 0.2s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding-top: 0.5rem;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.15);
+  scale: 1.1;
+}
+.product-block:hover{
+    scale: 1.1;
+    rotate: 2.5deg;
+}
+.product-block img{
+    width: 60%;
+    height: 52%;
+}
+.product-block button{
+    cursor: pointer;
+    padding: 0.3rem 1rem;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    background-color: var(--navyColor);
+    color: var(--mainWhite);
+    transition: 0.2s ease-out;
+}
+.product-block button:hover{
+    background-color: var(--primaryColor);
+}
+.main {
+  width: 100%;
+  max-height: 100vh;
+  overflow: auto;
+  background-color: var(--secondaryColor);
+  display: flex;
+  justify-content: center;
+}
