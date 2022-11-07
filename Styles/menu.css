@@ -102,7 +102,7 @@ a {
 }
 @media only screen and (max-width: 1024px) {
   .menu ul {
-    height: 35rem;
+    height: 32rem;
   }
   a{
     font-size: 1rem;
