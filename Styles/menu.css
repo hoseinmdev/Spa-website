@@ -10,7 +10,6 @@
 .menu-button {
   color: var(--mainWhite);
   font-size: 1.3rem;
-  padding-right: 0.5rem;
   transition: 0.2s ease;
   cursor: pointer;
   width: 2rem;
@@ -31,8 +30,7 @@
   width: 3.5rem;
   height: 100vh;
   border-top-left-radius: 50px;
-  padding: 1rem;
-  padding-top: 3rem;
+  padding: 3rem 1rem;
   position: sticky;
   overflow: hidden;
   display: flex;
@@ -102,7 +100,7 @@ a {
 }
 @media only screen and (max-width: 1024px) {
   .menu ul {
-    height: 30rem;
+    height: 27rem;
   }
   a{
     font-size: 1rem;
