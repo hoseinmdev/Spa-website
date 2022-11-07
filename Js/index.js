@@ -3,6 +3,20 @@ import { mobiles } from "../Pages/mobiles.js";
 import { gameConsoles } from "../Pages/gameConsoles.js";
 import { laptops } from "../Pages/laptops.js";
 
+const menu = document.querySelector(".menu");
+const menuBtn = document.querySelector(".menu-button");
+const menuTitle = document.querySelector(".menu-title");
+const aTag = document.querySelectorAll("a");
+const aTags = [...aTag];
+const ul = document.querySelector(".menu ul");
+menuBtn.addEventListener("click", () => {
+  menu.classList.toggle("showMenu");
+  ul.classList.toggle("open");
+  menuBtn.classList.toggle("menuBtnRotate");
+  menuTitle.classList.toggle("showMenuTitle");
+  aTags.forEach((item) => item.classList.toggle("showButtons"));
+});
+
 function router() {
   const routes = [
     { path: "/mobiles", view: mobiles },
@@ -34,19 +48,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 window.addEventListener("popstate", router);
-
-const menu = document.querySelector(".menu");
-const menuBtn = document.querySelector(".menu-button");
-const menuTitle = document.querySelector(".menu-title");
-const aTag = document.querySelectorAll("a");
-const aTags = [...aTag];
-const ul = document.querySelector(".menu ul")
-menuBtn.addEventListener("click", () => {
-  menu.classList.toggle("showMenu");
-  ul.classList.toggle("open")
-  menuBtn.classList.toggle("menuBtnRotate");
-  aTags.forEach((item) => {
-    item.classList.toggle("showButtons");
-  });
-  menuTitle.classList.toggle("showMenuTitle");
-});
